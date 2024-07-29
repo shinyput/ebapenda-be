@@ -7,7 +7,7 @@ import (
 )
 
 // CacheConfig - It's the custom struct used to store application configuration over the default struct defined in pkg/cache_config
-// Every fields need to be declared with tag `config:""`
+// Every fields need to be declared with tags `config:""`
 type CacheConfig struct {
 	cacheconf.DefaultCacheConfig
 	UserTimeToRefresh int `config:"USER_TIME_TO_REFRESH"`
